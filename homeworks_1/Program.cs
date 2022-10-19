@@ -68,12 +68,12 @@ int current = 0;
 while(current < a)
 {
   if(current % 2 == 1)
-   {
-      current++;
-   }
+   
+    current++;
+   
    
    Console.WriteLine(current);
-  current++;
+current++;
 
 }
 
