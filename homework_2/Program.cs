@@ -18,31 +18,32 @@
 
 //Задача 13: Напишите программу, которая выводит третью цифру заданного числа или сообщает, что третьей цифры нет.
 
-// int FindNum(int num)                                                
-// {
+/*/ int FindNum(int num)                                                
+ {
  
-// while(num >= 1000)
-//     {
-//     num = num /10;
-//     }
-//        if(num >= 101 && num <= 1001) 
-//         {
-//         num = num % 10;
-//         }
+ while(num >= 1001)
+     {
+        num = num /10;
+     }
+       if(num >= 101 && num <= 1001) 
         
-//          else
-//           num = -1;
-// return num;
-// }
+            num = num % 10;
+        
+        
+        else
+            num = -1;
+    
+    return num;
+  }
 
-// Console.WriteLine("Input a number: ");
-// int num1 = Convert.ToInt32(Console.ReadLine());
-//  int answer = FindNum(num1);
-//  Console.WriteLine(answer);
+  Console.WriteLine("Input a number: ");
+  int num1 = Convert.ToInt32(Console.ReadLine());
+  int answer = FindNum(num1);
+  Console.WriteLine(answer);
 
 // Задача 15: Напишите программу, которая принимает на вход цифру, обозначающую день недели, и проверяет, является ли этот день выходным.
 
- /*/ bool DaysOfWeek(int numDay)
+ /* bool DaysOfWeek(int numDay)
 {
     if(numDay == 6 || numDay == 7)
         return true;
@@ -53,4 +54,4 @@
 Console.Write(" Input a number day of week: ");
 int day = Convert.ToInt32(Console.ReadLine()); 
 bool answer = DaysOfWeek(day);
-Console.WriteLine($"This day {day} is {answer}"); /*/
+Console.WriteLine($"This day {day} is {answer}"); */
